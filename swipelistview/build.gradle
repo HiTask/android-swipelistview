@@ -1,26 +1,24 @@
 apply plugin: 'android-library'
 
-group = 'com.fortysevendeg.swipelistview'
-version = '1.0-SNAPSHOT'
 
 repositories {
-mavenCentral()
+    mavenCentral()
 }
 
 dependencies {
-	compile 'com.android.support:support-v4:19.0.+'
-	compile 'com.nineoldandroids:library:2.4.0+'
+    compile 'com.android.support:support-v4:+'
+    compile 'com.nineoldandroids:library:2.4.0+'
 }
 
 android {
-	compileSdkVersion 18
-	buildToolsVersion "19.0.0"
-	
-	sourceSets {
-		main {
-			manifest.srcFile 'AndroidManifest.xml'
-			java.srcDirs = ['src']
-			res.srcDirs = ['res']
-		}
-	}
+    compileSdkVersion 19
+    buildToolsVersion "19.0.3"
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+        }
+    }
 }

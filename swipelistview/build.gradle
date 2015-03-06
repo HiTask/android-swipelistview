@@ -1,18 +1,14 @@
-apply plugin: 'android-library'
+apply plugin: 'com.android.library'
 
-
-repositories {
-    mavenCentral()
-}
 
 dependencies {
-    compile 'com.android.support:support-v4:+'
-    compile 'com.nineoldandroids:library:2.4.0+'
+    compile 'com.android.support:support-v4:21.0.3'
+    compile 'com.nineoldandroids:library:2.4.0'
 }
 
 android {
-    compileSdkVersion 19
-    buildToolsVersion "19.1.0"
+    compileSdkVersion 21
+    buildToolsVersion '21.1.2'
 
     sourceSets {
         main {

@@ -1,14 +1,14 @@
-apply plugin: 'android'
+apply plugin: 'com.android.application'
 
 dependencies {
     compile project(':swipelistview')
-	compile 'com.android.support:support-v4:18.0.+'
-	compile 'com.nineoldandroids:library:2.4.0+'
+	compile 'com.android.support:support-v4:22.2.0'
+	compile 'com.nineoldandroids:library:2.4.0'
 }
 
 android {
-	compileSdkVersion 18
-	buildToolsVersion "18.0.1"
+	compileSdkVersion 22
+	buildToolsVersion '22.0.1'
 
 	sourceSets {
 		main {
